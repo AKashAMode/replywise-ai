@@ -13,8 +13,10 @@ function ResultCard({title, icon, children, className= ""}) {
 
             <div className="result-card-content">
                 {children}
-            </div>   
+            </div>
+               
         </div>
+        
     );
 }
 

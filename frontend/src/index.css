@@ -620,3 +620,267 @@ button:disabled {
     width: 100%;
   }
 }
+
+
+.save-task-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.save-task-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.save-task-button:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+.saved-task-card {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+.saved-task-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.saved-tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+
+
+/* =========================================
+   SAVED TASKS PAGE
+   ========================================= */
+
+.saved-tasks-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.saved-tasks-page h1 {
+  margin-bottom: 8px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.saved-tasks-page > p {
+  margin-bottom: 30px;
+  opacity: 0.7;
+}
+
+
+/* =========================================
+   SAVED TASKS LIST
+   ========================================= */
+
+.saved-tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* =========================================
+   SAVED TASK CARD
+   ========================================= */
+
+.saved-task-card {
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.saved-task-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   CARD HEADER
+   ========================================= */
+
+.saved-task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.saved-task-header span {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #f3f4f6;
+}
+
+
+/* =========================================
+   SUMMARY
+   ========================================= */
+
+.saved-task-card h3 {
+  margin: 0 0 18px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   TEXT
+   ========================================= */
+
+.saved-task-card p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.saved-task-card strong {
+  font-weight: 600;
+}
+
+
+/* =========================================
+   ACTIONS
+   ========================================= */
+
+.saved-task-card ul {
+  margin: 8px 0 18px;
+  padding-left: 22px;
+}
+
+.saved-task-card li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   DELETE BUTTON
+   ========================================= */
+
+.saved-task-card button {
+  margin-top: 10px;
+  padding: 9px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #f3f4f6;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.saved-task-card button:hover {
+  background: #e5e7eb;
+}
+
+
+
+   /* EMPTY STATE */
+
+
+.saved-tasks-page > p {
+  padding: 40px;
+  text-align: center;
+  border: 1px dashed #d1d5db;
+  border-radius: 12px;
+}
+
+
+
+   /* RESPONSIVE */
+  
+
+@media (max-width: 768px) {
+
+  .saved-tasks-page {
+    padding: 25px 16px;
+  }
+
+  .saved-tasks-page h1 {
+    font-size: 26px;
+  }
+
+  .saved-task-card {
+    padding: 18px;
+  }
+
+  .saved-task-header {
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+
+
+   /* NAVBAR */
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 32px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Navbar links */
+
+.navbar a {
+  text-decoration: none;
+  color: #111827;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #4f46e5;
+}
+
+/* ReplyWise logo  */
+
+.navbar a:first-child {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+
+   /* RESPONSIVE NAVBAR */
+
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 18px;
+  }
+
+  .navbar a:first-child {
+    font-size: 18px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+}

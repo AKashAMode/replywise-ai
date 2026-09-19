@@ -88,6 +88,7 @@ function AnalyzerPage() {
             disabled={loading}
           />
 
+
           <div className="examples-section">
             <p>Try an example:</p>
 

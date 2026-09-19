@@ -1,7 +1,8 @@
 import { useState } from "react";
 import ResultCard from "./ResultCard";
+import SaveTaskButton from "./SaveTaskButton";
 
-function AnalysisResult({ result }) {
+function AnalysisResult({ result, originalMessage  }) {
   const [copied, setCopied] = useState(false);
 
   const handleCopyReply = async () => {
@@ -124,6 +125,14 @@ function AnalysisResult({ result }) {
               "No suggested reply was generated."}
           </p>
         </div>
+
+        <div className="save-task-container">
+        <SaveTaskButton
+          analysis={result}
+          originalMessage={originalMessage}
+        />
+      </div>
+
       </div>
     </section>
   );

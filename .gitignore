@@ -1,0 +1,63 @@
+
+
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Environment files
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+
+# =========================
+# Java / Spring Boot / Maven
+
+backend/target/
+backend/.mvn/
+
+# Maven generated files
+backend/*.log
+
+# Environment / secrets
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+
+# =========================
+# IDE
+
+
+.vscode/
+.idea/
+*.iml
+
+
+
+# OS
+
+.DS_Store
+Thumbs.db
+
+
+
+# Logs
+
+
+*.log
+
+
+
+# Java
+
+
+*.class
+
+
+
+# Temporary files
+
+
+*.tmp
+*.temp

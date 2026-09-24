@@ -17,6 +17,8 @@ The application uses a **React frontend**, **Spring Boot backend**, and a **loca
 
 It is designed to run completely on a local machine without requiring a paid cloud AI API.
 
+Demo of Application : https://www.loom.com/share/a48b95386c604336af8fba13d53b43d9
+
 ---
 
 ## Features
